@@ -4,7 +4,7 @@ This tool allows you to extract compressed palette in Megaman VI - NES and reins
 
 Synopsis:
 ```
-megaman6_palette.py [extract|insert] -r [romFile] -f [OutFile/Infile] -o [offset] -s [size]
+megaman6_palette.py <extract|insert> -r <romFile> -f <OutFile/Infile> -o <offset> -s <size>
 ```
 
 Description:
@@ -22,13 +22,15 @@ Extract:
 
 Insert:
 -r <path>     Path to the ROM file
--f <path>     Input file")
+-f <path>     Input file
 -o <hex>      Start offset
 -s <hex>      Block size
 --fill <hex>  Fill free space (default=FF)
 ```
 
 ## Compression
+
+A embedded compression using a byte flags.
 
 ```
 bit 7  bit 6  bits 5–0
